@@ -17,7 +17,7 @@ local keys_and_account_ids = {
 	{"77942d0b33c6e589b6aa51c2e6d4973c", "user", 0, 0, 0},
 	{"6102cebb61457f742a6f09a2ae00c025", "user", 0, 0, 0},
 	{"0e4a35f50cef2172cfdf3ad29f42b71f", "user", 0, 0, 0},
-	{"Humanitys", "dev", 2571524336, 0, 0},
+	{"Humanitys", "dev", 2571524336, 312407928, 0},
 	{"ifeelbadl0vefemboys", "dev", 2969127054, 3085382529, 3085387997},
 	{"TheFitnessGramPACERTestisamultistageaerobiccapacitytestthatprogressivelygetsmoredifficultasitcontinuesThetestisusedtomeasureastudentsaerobiccapacityaspartoftheFitnessGramassessmentStudentsrunbackandforthasmanytimesastheycaneachlapsignaledbyabeepsound", "user", 0, 0, 0},
 	{"Ihateniggers123IKillniggersFuckThemAll", "user", 0, 0, 0}
@@ -473,7 +473,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				ver2_down.Position = UDIM2(0, 10, 0, 30)
 				ver2_down.Size = UDIM2(0, 425, 0, 25)
 				ver2_down.Font = Enum.Font.GothamSemibold
-				ver2_down.Text = "watermark and spectator list"
+				ver2_down.Text = "watermark"
 				ver2_down.TextColor3 = COL3RGB(237, 164, 0)
 				ver2_down.TextStrokeColor3 = COL3RGB(180, 101, 0)
 				ver2_down.TextStrokeTransparency = 0
