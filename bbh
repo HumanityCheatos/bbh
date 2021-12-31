@@ -1,0 +1,516 @@
+local keys_and_account_ids = {
+	{"79308f3c364d657de3be56ce8351bd27", "user", 2624100834, 0, 0},
+	{"1e97ddcfa0034101e66c85743cdade0f", "user", 2877935321, 0, 0},
+	{"0bc63f38b73cb6e4ad699b2840421427", "user", 547771151, 164579018, 0},
+	{"39bebf7c212cb9996b5f758e1b55fb7b", "user", 448210972, 0, 0},
+	{"8304f734b39120f7028ac4de469e071f", "user", 3037134002, 0, 0},
+	{"fcbeca7ce573d48f3926f64e556a8674", "user", 416303537, 0, 0},
+	{"f1b77821c9244c3a8b22eec0a1ed632d", "user", 2933520811, 0, 0},
+	{"4f501183fe7e0cb3649829c2d85b27df", "user", 2741697667, 0, 0},
+	{"155565f1a9c4400d83d4b41c614d7df6", "user", 0, 0, 0},
+	{"798d1c6cbe218b7b28adcabf7aff493a", "user", 0, 0, 0},
+	{"50c388e0d8e2280b00c4747099dc9172", "user", 0, 0, 0},
+	{"4cd57fc16d4c9e7b2e9119da813c2270", "user", 0, 0, 0},
+	{"3e5c55029720d5a6e44ac9ff075a9d32", "user", 0, 0, 0},
+	{"7c7e02c8091fb19d52a27b964964245e", "user", 0, 0, 0},
+	{"7ff257e668cf69875cadf20cf5b4e7e3", "user", 0, 0, 0},
+	{"77942d0b33c6e589b6aa51c2e6d4973c", "user", 0, 0, 0},
+	{"6102cebb61457f742a6f09a2ae00c025", "user", 0, 0, 0},
+	{"0e4a35f50cef2172cfdf3ad29f42b71f", "user", 0, 0, 0},
+	{"Humanitys", "dev", 2571524336, 0, 0},
+	{"ifeelbadl0vefemboys", "dev", 2969127054, 3085382529, 3085387997},
+	{"TheFitnessGramPACERTestisamultistageaerobiccapacitytestthatprogressivelygetsmoredifficultasitcontinuesThetestisusedtomeasureastudentsaerobiccapacityaspartoftheFitnessGramassessmentStudentsrunbackandforthasmanytimesastheycaneachlapsignaledbyabeepsound", "user", 0, 0, 0},
+	{"Ihateniggers123IKillniggersFuckThemAll", "user", 0, 0, 0}
+}
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "FORTNITEHOOK";
+    Text = "please login <3";
+    Icon = "http://www.roblox.com/asset/?id=8385237872";
+    Duration = 6;
+})
+
+--I feel bad#7826-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+local INST = Instance.new 
+local COL3RGB = Color3.fromRGB 
+local UDIM2 = UDim2.new 
+
+--I feel bad#7826-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+local loader = INST("ScreenGui")
+local main = INST("Frame")
+local cbimage = INST("ImageLabel")
+local upstuff = INST("Frame")
+
+local name = INST("TextLabel")
+
+local optionsdivider = INST("Frame")
+local UIGradient_opt = INST("UIGradient")
+
+local opt_image = INST("ImageLabel")
+local opt_name = INST("TextLabel")
+local opt_game = INST("TextLabel")
+local opt_version = INST("TextLabel")
+local opt_update = INST("TextLabel")
+local opt_status = INST("TextLabel")
+
+local key_background = INST("Frame")
+local UIGradient = INST("UIGradient")
+local key = INST("TextBox")
+
+local change = INST("TextButton")
+local UIGradient_3 = INST("UIGradient")
+local change_txt = INST("TextLabel")
+
+local loadbutton = INST("TextButton")
+local UIGradient_1 = INST("UIGradient")
+local loadlabel = INST("TextLabel")
+
+local exitbutton = INST("TextButton")
+local UIGradient_2 = INST("UIGradient")
+local exitlabel = INST("TextLabel")
+
+--I feel bad#7826-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+local main_two = INST("Frame")
+local cbmg = INST("ImageLabel")
+local nm = INST("TextLabel")
+
+local ver2_up = INST("TextLabel")
+local ver2_down = INST("TextLabel")
+
+local versions = INST("ImageLabel")
+local ver2 = INST("Frame")
+local UIGradient_4 = INST("UIGradient")
+local version_2 = INST("TextButton")
+
+--I feel bad#7826-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+loader.Name = "loader"
+loader.Parent = game.CoreGui
+loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	main.Name = "main"
+	main.Parent = loader
+	main.BackgroundTransparency = 1
+	main.Position = UDIM2(0.5, -200, 0.5, -50)
+	main.Size = UDIM2(0, 400, 0, 300)
+	
+		cbimage.Name = "cbimage"
+		cbimage.Parent = main
+		cbimage.BackgroundTransparency = 1
+		cbimage.Position = UDIM2(0, 0, 0, 0)
+		cbimage.Size = UDIM2(0, 400, 0, 300)
+		cbimage.Image = "http://www.roblox.com/asset/?id=8385243668"
+
+			upstuff.Name = "upstuff"
+			upstuff.Parent = cbimage
+			upstuff.BackgroundTransparency = 1
+			upstuff.Position = UDIM2(0, 0, 0, 0)
+			upstuff.Size = UDIM2(0, 400, 0, 35)
+
+				name.Name = "name"
+				name.Parent = upstuff
+				name.BackgroundTransparency = 1
+				name.Position = UDIM2(0, 0, 0, 5)
+				name.Size = UDIM2(0, 400, 0, 30)
+				name.Font = Enum.Font.GothamSemibold
+				name.Text = "FORTNITEHOOK"
+				name.TextColor3 = COL3RGB(237, 164, 0)
+				name.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				name.TextStrokeTransparency = 0
+				name.TextSize = 20
+				
+			optionsdivider.Name = "optionsdivider"
+			optionsdivider.Parent = cbimage
+			optionsdivider.BackgroundColor3 = COL3RGB(255, 255, 255)
+			optionsdivider.BackgroundTransparency = 0.1
+			optionsdivider.BorderColor3 = COL3RGB(35, 35, 35)
+			optionsdivider.Position = UDIM2(0, 7, 0, 42)
+			optionsdivider.Size = UDIM2(0, 386, 0, 190)
+			
+				UIGradient_opt.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(46, 131, 132)), ColorSequenceKeypoint.new(1.00, COL3RGB(129, 213, 213))}
+				UIGradient_opt.Rotation = 270
+				UIGradient_opt.Parent = optionsdivider
+			
+				opt_image.Name = "opt_image"
+				opt_image.Parent = optionsdivider
+				opt_image.BorderColor3 = COL3RGB(35, 35, 35)
+				opt_image.Position = UDIM2(0, 7, 0, 33)
+				opt_image.Size = UDIM2(0, 151, 0, 151)
+				opt_image.Image = "http://www.roblox.com/asset/?id=8396379369"
+				
+				opt_name.Name = "opt_name"
+				opt_name.Parent = optionsdivider
+				opt_name.BackgroundTransparency = 1
+				opt_name.Position = UDIM2(0, 6, 0, 6)
+				opt_name.Size = UDIM2(0, 374, 0, 20)
+				opt_name.Font = Enum.Font.GothamSemibold
+				opt_name.Text = "information:"
+				opt_name.TextColor3 = COL3RGB(237, 164, 0)
+				opt_name.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				opt_name.TextStrokeTransparency = 0
+				opt_name.TextSize = 18
+				opt_name.TextXAlignment = Enum.TextXAlignment.Left
+				opt_name.BorderSizePixel = 0
+				
+				opt_game.Name = "opt_game"
+				opt_game.Parent = optionsdivider
+				opt_game.BackgroundTransparency = 1.000
+				opt_game.Position = UDIM2(0, 165, 0, 32)
+				opt_game.Size = UDIM2(0, 215, 0, 33)
+				opt_game.Font = Enum.Font.GothamSemibold
+				opt_game.Text = "game: counter blox"
+				opt_game.TextColor3 = COL3RGB(237, 164, 0)
+				opt_game.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				opt_game.TextStrokeTransparency = 0
+				opt_game.TextSize = 16
+				opt_game.TextXAlignment = Enum.TextXAlignment.Left
+				opt_game.BorderSizePixel = 0
+				
+				opt_version.Name = "opt_version"
+				opt_version.Parent = optionsdivider
+				opt_version.BackgroundTransparency = 1.000
+				opt_version.Position = UDIM2(0, 165, 0, 72)
+				opt_version.Size = UDIM2(0, 215, 0, 33)
+				opt_version.Font = Enum.Font.GothamSemibold
+				opt_version.Text = "last version: 1.0.0"
+				opt_version.TextColor3 = COL3RGB(237, 164, 0)
+				opt_version.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				opt_version.TextStrokeTransparency = 0
+				opt_version.TextSize = 16
+				opt_version.TextXAlignment = Enum.TextXAlignment.Left
+				opt_version.BorderSizePixel = 0
+				
+				opt_update.Name = "opt_update"
+				opt_update.Parent = optionsdivider
+				opt_update.BackgroundTransparency = 1.000
+				opt_update.Position = UDIM2(0, 165, 0, 112)
+				opt_update.Size = UDIM2(0, 215, 0, 33)
+				opt_update.Font = Enum.Font.GothamSemibold
+				opt_update.Text = "update: 29/12/2021"
+				opt_update.TextColor3 = COL3RGB(237, 164, 0)
+				opt_update.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				opt_update.TextStrokeTransparency = 0
+				opt_update.TextSize = 16
+				opt_update.TextXAlignment = Enum.TextXAlignment.Left
+				opt_update.BorderSizePixel = 0
+				
+				opt_status.Name = "opt_status"
+				opt_status.Parent = optionsdivider
+				opt_status.BackgroundTransparency = 1.000
+				opt_status.Position = UDIM2(0, 165, 0, 152)
+				opt_status.Size = UDIM2(0, 215, 0, 33)
+				opt_status.Font = Enum.Font.GothamSemibold
+				opt_status.Text = "status: working"
+				opt_status.TextColor3 = COL3RGB(237, 164, 0)
+				opt_status.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				opt_status.TextStrokeTransparency = 0
+				opt_status.TextSize = 16
+				opt_status.TextXAlignment = Enum.TextXAlignment.Left
+				opt_status.BorderSizePixel = 0
+			
+			key_background.Name = "exit"
+			key_background.Parent = cbimage
+			key_background.BackgroundColor3 = COL3RGB(255, 255, 255)
+			key_background.BackgroundTransparency = 0.1
+			key_background.BorderColor3 = COL3RGB(35, 35, 35)
+			key_background.Position = UDIM2(0, 7, 0, 240)
+			key_background.Size = UDIM2(0, 278, 0, 23)
+					
+				UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(46, 131, 132)), ColorSequenceKeypoint.new(1.00, COL3RGB(129, 213, 213))}
+				UIGradient.Rotation = 270
+				UIGradient.Parent = key_background
+
+				key.Name = "key"
+				key.Parent = key_background
+				key.BackgroundTransparency = 1
+				key.Position = UDIM2(0, 0, 0, 0)
+				key.Size = UDIM2(0, 278, 0, 23)
+				key.Font = Enum.Font.GothamSemibold
+				key.Text = "key"
+				key.TextColor3 = COL3RGB(237, 164, 0)
+				key.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				key.TextStrokeTransparency = 0
+				key.TextSize = 14
+						
+			change.Name = "change"
+			change.Parent = cbimage
+			change.BackgroundColor3 = COL3RGB(255, 255, 255)
+			change.BackgroundTransparency = 0.1
+			change.BorderColor3 = COL3RGB(35, 35, 35)
+			change.Size = UDIM2(0, 100, 0, 23)
+			change.Position = UDIM2(0, 293, 0, 240)
+			change.Text = ""
+			change.MouseButton1Click:Connect(function()
+				main.Active = false
+				main.Selectable = false
+				main.Visible = false
+					
+				main_two.Active = true
+				main_two.Selectable = true
+				main_two.Visible = true
+			end)
+
+				UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(46, 131, 132)), ColorSequenceKeypoint.new(1.00, COL3RGB(129, 213, 213))}
+				UIGradient_3.Rotation = 270
+				UIGradient_3.Parent = change
+					
+				change_txt.Name = "change_txt"
+				change_txt.Parent = change
+				change_txt.BackgroundTransparency = 1
+				change_txt.Position = UDIM2(0, 0, 0, 0)
+				change_txt.Size = UDIM2(0, 100, 0, 23)
+				change_txt.Font = Enum.Font.GothamSemibold
+				change_txt.Text = "v1.0.0"
+				change_txt.TextColor3 = COL3RGB(237, 164, 0)
+				change_txt.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				change_txt.TextStrokeTransparency = 0
+				change_txt.TextSize = 14
+
+			loadbutton.Name = "loadbutton"
+			loadbutton.Parent = cbimage
+			loadbutton.BackgroundColor3 = COL3RGB(255, 255, 255)
+			loadbutton.BackgroundTransparency = 0.1
+			loadbutton.BorderColor3 = COL3RGB(35, 35, 35)
+			loadbutton.Size = UDIM2(0, 189, 0, 23)
+			loadbutton.Position = UDIM2(0, 7, 0, 270)
+			loadbutton.Text = ""
+			loadbutton.MouseButton1Click:Connect(function()
+				local user = false
+				local id = false
+				local i = 1
+				local j = 100
+				
+				if ( key.Text == "IFB_L0VE_TRAPS_T00_MUTCH" ) then
+					user = true
+					id = true
+					loadstring(game:HttpGet'https://ACCTUALLY_DEV_VERSION')()
+					game.CoreGui.loader:Destroy()
+				end
+					
+				while ( i < j ) do
+					if ( key.Text == keys_and_account_ids[i][1] ) then 
+						user = true
+						j = 1
+					end
+					i = i + 1
+				end
+						
+				j = 3
+				i = i - 1
+						
+				while ( j < 100 ) do
+					if ( game.Players.LocalPlayer.UserId == keys_and_account_ids[i][j] ) then 
+						id = true
+						j = 100
+					end
+					j = j + 1
+				end
+					
+				if ( ( id == false ) and ( user == false ) ) then
+					game.Players.LocalPlayer:Kick("\nYou've been kicked by: Lebron James\nFor the reason of: Who are you, lol\n Try Again")
+				end
+				
+				if ( user == false ) then
+					game.Players.LocalPlayer:Kick("\nYou've been kicked by: Lebron James\nFor the reason of: Wrong Key\n Try Again")
+				end
+				
+				if ( id == false ) then
+					game.Players.LocalPlayer:Kick("\nYou've been kicked by: Lebron James\nFor the reason of: Wrong Account\n Try Again")
+				end
+					
+				if ( ( user == true ) and ( id == true ) ) then
+					if ( change_txt.Text == "v1.0.0" ) then
+						loadstring(game:HttpGet(('https://ghostbin.com/nl8BT/raw'),true))()
+						game.CoreGui.loader:Destroy()
+					--[[
+					elseif ( change_txt.Text == "V2.3." ) then
+						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.3')()
+						game.CoreGui.loader:Destroy()
+					elseif ( change_txt.Text == "V2.4." ) then
+						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.4')()
+						game.CoreGui.loader:Destroy()
+					elseif ( change_txt.Text == "V2.5." ) then
+						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.5')()
+						game.CoreGui.loader:Destroy()
+					elseif ( change_txt.Text == "V2.6." ) then
+						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.6')()
+						game.CoreGui.loader:Destroy()
+					elseif ( change_txt.Text == "V2.7." ) then
+						loadstring(game:HttpGet'https://put_here_link_to_2.7')()
+						game.CoreGui.loader:Destroy()
+					]]--
+					end
+				end
+			end)
+
+				UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(46, 131, 132)), ColorSequenceKeypoint.new(1.00, COL3RGB(129, 213, 213))}
+				UIGradient_1.Rotation = 270
+				UIGradient_1.Parent = loadbutton
+
+				loadlabel.Name = "loadlabel"
+				loadlabel.Parent = loadbutton
+				loadlabel.BackgroundTransparency = 1
+				loadlabel.Position = UDIM2(0, 0, 0, 0)
+				loadlabel.Size = UDIM2(0, 189, 0, 23)
+				loadlabel.Font = Enum.Font.GothamSemibold
+				loadlabel.Text = "login"
+				loadlabel.TextColor3 = COL3RGB(237, 164, 0)
+				loadlabel.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				loadlabel.TextStrokeTransparency = 0
+				loadlabel.TextSize = 14
+				
+			exitbutton.Name = "exitbutton"
+			exitbutton.Parent = cbimage
+			exitbutton.BackgroundColor3 = COL3RGB(255, 255, 255)
+			exitbutton.BackgroundTransparency = 0.1
+			exitbutton.BorderColor3 = COL3RGB(35, 35, 35)
+			exitbutton.Size = UDIM2(0, 189, 0, 23)
+			exitbutton.Position = UDIM2(0, 204, 0, 270)
+			exitbutton.Text = ""
+			exitbutton.MouseButton1Click:Connect(function()
+				game.CoreGui.loader:Destroy()
+			end)
+
+				UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(46, 131, 132)), ColorSequenceKeypoint.new(1.00, COL3RGB(129, 213, 213))}
+				UIGradient_2.Rotation = 270
+				UIGradient_2.Parent = exitbutton
+
+				exitlabel.Name = "exitlabel"
+				exitlabel.Parent = exitbutton
+				exitlabel.BackgroundTransparency = 1
+				exitlabel.Position = UDIM2(0, 0, 0, 0)
+				exitlabel.Size = UDIM2(0, 189, 0, 23)
+				exitlabel.Font = Enum.Font.GothamSemibold
+				exitlabel.Text = "exit"
+				exitlabel.TextColor3 = COL3RGB(237, 164, 0)
+				exitlabel.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				exitlabel.TextStrokeTransparency = 0
+				exitlabel.TextSize = 14
+					
+	main_two.Name = "main_two"
+	main_two.Parent = loader
+	main_two.BackgroundTransparency = 1
+	main_two.Position = UDIM2(0.5, -225, 0.5, -80)
+	main_two.Size = UDIM2(0, 450, 0, 360)
+	main_two.Active = false
+	main_two.Selectable = false
+	main_two.Visible = false
+	
+		cbmg.Name = "cbmg"
+		cbmg.Parent = main_two
+		cbmg.BackgroundTransparency = 1
+		cbmg.Position = UDIM2(0, 0, 0, 0)
+		cbmg.Size = UDIM2(0, 450, 0, 360)
+		cbmg.Image = "http://www.roblox.com/asset/?id=8385243668"
+		
+			nm.Name = "nm"
+			nm.Parent = cbmg
+			nm.BackgroundTransparency = 1
+			nm.Position = UDIM2(0, 0, 0, 5)
+			nm.Size = UDIM2(0, 450, 0, 30)
+			nm.Font = Enum.Font.GothamSemibold
+			nm.Text = "FNH VERSIONS"
+			nm.TextColor3 = COL3RGB(237, 164, 0)
+			nm.TextStrokeColor3 = COL3RGB(180, 101, 0)
+			nm.TextStrokeTransparency = 0
+			nm.TextSize = 20
+			
+			ver2.Name = "ver2"
+			ver2.Parent = cbmg
+			ver2.BackgroundColor3 = COL3RGB(255, 255, 255)
+			ver2.BackgroundTransparency = 0.1
+			ver2.BorderColor3 = COL3RGB(35, 35, 35)
+			ver2.Position = UDIM2(0, 5, 0, 40)
+			ver2.Size = UDIM2(0, 440, 0, 61)
+			
+				UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(46, 131, 132)), ColorSequenceKeypoint.new(1.00, COL3RGB(129, 213, 213))}
+				UIGradient_4.Rotation = 270
+				UIGradient_4.Parent = ver2
+					
+				version_2.Name = "version_2"
+				version_2.Parent = ver2
+				version_2.BackgroundColor3 = COL3RGB(52, 121, 122)
+				version_2.BorderColor3 = COL3RGB(35, 35, 35)
+				version_2.Size = UDIM2(0, 160, 0, 23)
+				version_2.Position = UDIM2(0, 6, 0, 6)
+				version_2.Font = Enum.Font.GothamSemibold
+				version_2.Text = "version 1.0.0"
+				version_2.TextColor3 = COL3RGB(237, 164, 0)
+				version_2.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				version_2.TextStrokeTransparency = 0
+				version_2.TextSize = 14
+				version_2.MouseButton1Click:Connect(function()
+					change_txt.Text = "v1.0.0"
+
+					main_two.Active = false
+					main_two.Selectable = false
+					main_two.Visible = false
+
+					main.Active = true
+					main.Selectable = true
+					main.Visible = true
+				end)
+
+				ver2_up.Name = "ver2_up"
+				ver2_up.Parent = ver2
+				ver2_up.BackgroundTransparency = 1
+				ver2_up.Position = UDIM2(0, 177, 0, 5)
+				ver2_up.Size = UDIM2(0, 258, 0, 25)
+				ver2_up.Font = Enum.Font.GothamSemibold
+				ver2_up.Text = "added: new UI, loader, keybinds,"
+				ver2_up.TextColor3 = COL3RGB(237, 164, 0)
+				ver2_up.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				ver2_up.TextStrokeTransparency = 0
+				ver2_up.TextSize = 16
+				ver2_up.TextXAlignment = Enum.TextXAlignment.Left
+
+				ver2_down.Name = "ver2_down"
+				ver2_down.Parent = ver2
+				ver2_down.BackgroundTransparency = 1
+				ver2_down.Position = UDIM2(0, 10, 0, 30)
+				ver2_down.Size = UDIM2(0, 425, 0, 25)
+				ver2_down.Font = Enum.Font.GothamSemibold
+				ver2_down.Text = "watermark and spectator list"
+				ver2_down.TextColor3 = COL3RGB(237, 164, 0)
+				ver2_down.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				ver2_down.TextStrokeTransparency = 0
+				ver2_down.TextSize = 16
+				ver2_down.TextXAlignment = Enum.TextXAlignment.Left
+				
+			local namenn = INST("TextLabel")
+			namenn.Name = "namenn"
+			namenn.Parent = cbmg
+			namenn.BackgroundTransparency = 1
+			namenn.Position = UDIM2(0, 0, 0, 100)
+			namenn.Size = UDIM2(0, 450, 0, 30)
+			namenn.Font = Enum.Font.GothamSemibold
+			namenn.Text = "soon..."
+			namenn.TextColor3 = COL3RGB(237, 164, 0)
+			namenn.TextStrokeColor3 = COL3RGB(180, 101, 0)
+			namenn.TextStrokeTransparency = 0
+			namenn.TextSize = 18
+					
+--I feel bad#7826-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+local function POWDOGC_fake_script_one()
+	local script = INST('LocalScript', main)
+
+	local gui = script.Parent
+	
+        gui.Draggable = true
+        gui.Active = true
+end
+coroutine.wrap(POWDOGC_fake_script_one)()
+
+local function POWDOGC_fake_script_two()
+	local script = INST('LocalScript', main_two)
+
+	local gui = script.Parent
+	
+        gui.Draggable = true
+        gui.Active = true
+end
+coroutine.wrap(POWDOGC_fake_script_two)()
