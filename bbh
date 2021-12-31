@@ -323,7 +323,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 					
 				if ( ( user == true ) and ( id == true ) ) then
 					if ( change_txt.Text == "v1.0.0" ) then
-						loadstring(game:HttpGet(('https://ghostbin.com/nl8BT/raw'),true))()
+						loadstring(game:HttpGet(('https://raw.githubusercontent.com/HumanityCheatos/mvmvmj/main/fasdfasd'),true))()
 						game.CoreGui.loader:Destroy()
 					--[[
 					elseif ( change_txt.Text == "V2.3." ) then
