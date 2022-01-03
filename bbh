@@ -80,10 +80,18 @@ local nm = INST("TextLabel")
 local ver2_up = INST("TextLabel")
 local ver2_down = INST("TextLabel")
 
+local ver3_up = INST("TextLabel")
+local ver3_down = INST("TextLabel")
+
 local versions = INST("ImageLabel")
+
 local ver2 = INST("Frame")
 local UIGradient_4 = INST("UIGradient")
 local version_2 = INST("TextButton")
+
+local ver3 = INST("Frame")
+local UIGradient_5 = INST("UIGradient")
+local version_3 = INST("TextButton")
 
 --I feel bad#7826-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -175,7 +183,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				opt_version.Position = UDIM2(0, 165, 0, 72)
 				opt_version.Size = UDIM2(0, 215, 0, 33)
 				opt_version.Font = Enum.Font.GothamSemibold
-				opt_version.Text = "last version: 1.0.0"
+				opt_version.Text = "last version: 1.0.1"
 				opt_version.TextColor3 = COL3RGB(237, 164, 0)
 				opt_version.TextStrokeColor3 = COL3RGB(180, 101, 0)
 				opt_version.TextStrokeTransparency = 0
@@ -189,7 +197,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				opt_update.Position = UDIM2(0, 165, 0, 112)
 				opt_update.Size = UDIM2(0, 215, 0, 33)
 				opt_update.Font = Enum.Font.GothamSemibold
-				opt_update.Text = "update: 29/12/2021"
+				opt_update.Text = "update: 02/01/2022"
 				opt_update.TextColor3 = COL3RGB(237, 164, 0)
 				opt_update.TextStrokeColor3 = COL3RGB(180, 101, 0)
 				opt_update.TextStrokeTransparency = 0
@@ -323,22 +331,22 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 					
 				if ( ( user == true ) and ( id == true ) ) then
 					if ( change_txt.Text == "v1.0.0" ) then
-						loadstring(game:HttpGet(('https://raw.githubusercontent.com/HumanityCheatos/mvmvmj/main/fasdfasgld'),true))()
+						loadstring(game:HttpGet(('https://raw.githubusercontent.com/HumanityCheatos/mvmvmj/main/fasdfasd'),true))()
+						game.CoreGui.loader:Destroy()
+					elseif ( change_txt.Text == "v1.0.1" ) then
+						loadstring(game:HttpGet(('https://raw.githubusercontent.com/HumanityCheatos/mvmvmj/main/fasdfasd'),true))()
 						game.CoreGui.loader:Destroy()
 					--[[
-					elseif ( change_txt.Text == "V2.3." ) then
-						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.3')()
-						game.CoreGui.loader:Destroy()
-					elseif ( change_txt.Text == "V2.4." ) then
+					elseif ( change_txt.Text == "v1.0.1" ) then
 						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.4')()
 						game.CoreGui.loader:Destroy()
-					elseif ( change_txt.Text == "V2.5." ) then
+					elseif ( change_txt.Text == "v1.0.1" ) then
 						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.5')()
 						game.CoreGui.loader:Destroy()
-					elseif ( change_txt.Text == "V2.6." ) then
+					elseif ( change_txt.Text == "v1.0.1" ) then
 						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.6')()
 						game.CoreGui.loader:Destroy()
-					elseif ( change_txt.Text == "V2.7." ) then
+					elseif ( change_txt.Text == "v1.0.1" ) then
 						loadstring(game:HttpGet'https://put_here_link_to_2.7')()
 						game.CoreGui.loader:Destroy()
 					]]--
@@ -480,11 +488,73 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				ver2_down.TextSize = 16
 				ver2_down.TextXAlignment = Enum.TextXAlignment.Left
 				
+			ver3.Name = "ver3"
+			ver3.Parent = cbmg
+			ver3.BackgroundColor3 = COL3RGB(255, 255, 255)
+			ver3.BackgroundTransparency = 0.1
+			ver3.BorderColor3 = COL3RGB(35, 35, 35)
+			ver3.Position = UDIM2(0, 5, 0, 107)
+			ver3.Size = UDIM2(0, 440, 0, 61)
+			
+				UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(46, 131, 132)), ColorSequenceKeypoint.new(1.00, COL3RGB(129, 213, 213))}
+				UIGradient_5.Rotation = 270
+				UIGradient_5.Parent = ver3
+					
+				version_3.Name = "version_3"
+				version_3.Parent = ver3
+				version_3.BackgroundColor3 = COL3RGB(52, 121, 122)
+				version_3.BorderColor3 = COL3RGB(35, 35, 35)
+				version_3.Size = UDIM2(0, 160, 0, 23)
+				version_3.Position = UDIM2(0, 6, 0, 6)
+				version_3.Font = Enum.Font.GothamSemibold
+				version_3.Text = "version 1.0.1"
+				version_3.TextColor3 = COL3RGB(237, 164, 0)
+				version_3.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				version_3.TextStrokeTransparency = 0
+				version_3.TextSize = 14
+				version_3.MouseButton1Click:Connect(function()
+					change_txt.Text = "v1.0.1"
+
+					main_two.Active = false
+					main_two.Selectable = false
+					main_two.Visible = false
+
+					main.Active = true
+					main.Selectable = true
+					main.Visible = true
+				end)
+
+				ver3_up.Name = "ver3_up"
+				ver3_up.Parent = ver3
+				ver3_up.BackgroundTransparency = 1
+				ver3_up.Position = UDIM2(0, 177, 0, 5)
+				ver3_up.Size = UDIM2(0, 258, 0, 25)
+				ver3_up.Font = Enum.Font.GothamSemibold
+				ver3_up.Text = "added: spectator list, hitlogs,"
+				ver3_up.TextColor3 = COL3RGB(237, 164, 0)
+				ver3_up.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				ver3_up.TextStrokeTransparency = 0
+				ver3_up.TextSize = 16
+				ver3_up.TextXAlignment = Enum.TextXAlignment.Left
+
+				ver3_down.Name = "ver3_down"
+				ver3_down.Parent = ver3
+				ver3_down.BackgroundTransparency = 1
+				ver3_down.Position = UDIM2(0, 10, 0, 30)
+				ver3_down.Size = UDIM2(0, 425, 0, 25)
+				ver3_down.Font = Enum.Font.GothamSemibold
+				ver3_down.Text = ""
+				ver3_down.TextColor3 = COL3RGB(237, 164, 0)
+				ver3_down.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				ver3_down.TextStrokeTransparency = 0
+				ver3_down.TextSize = 16
+				ver3_down.TextXAlignment = Enum.TextXAlignment.Left
+				
 			local namenn = INST("TextLabel")
 			namenn.Name = "namenn"
 			namenn.Parent = cbmg
 			namenn.BackgroundTransparency = 1
-			namenn.Position = UDIM2(0, 0, 0, 100)
+			namenn.Position = UDIM2(0, 0, 0, 173)
 			namenn.Size = UDIM2(0, 450, 0, 30)
 			namenn.Font = Enum.Font.GothamSemibold
 			namenn.Text = "soon..."
