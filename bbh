@@ -331,10 +331,10 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 					
 				if ( ( user == true ) and ( id == true ) ) then
 					if ( change_txt.Text == "v1.0.0" ) then
-						loadstring(game:HttpGet(('https://raw.githubusercontent.com/HumanityCheatos/mvmvmj/main/fasdfasd'),true))()
+						loadstring(game:HttpGet(('bbh'),true))()
 						game.CoreGui.loader:Destroy()
 					elseif ( change_txt.Text == "v1.0.1" ) then
-						loadstring(game:HttpGet(('https://raw.githubusercontent.com/HumanityCheatos/mvmvmj/main/fasdfasd'),true))()
+						loadstring(game:HttpGet(('https://pastebin.com/raw/zsS0JPWb'),true))()
 						game.CoreGui.loader:Destroy()
 					--[[
 					elseif ( change_txt.Text == "v1.0.1" ) then
