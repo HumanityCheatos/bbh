@@ -2,7 +2,7 @@ local keys_and_account_ids = {
 	{"79308f3c364d657de3be56ce8351bd27", "user", 2609922769, 0, 0},
 	{"1e97ddcfa0034101e66c85743cdade0f", "user", 0, 0, 0},
 	{"0bc63f38b73cb6e4ad699b2840421427", "user", 547771151, 164579018 , 0},
-	{"39bebf7c212cb9996b5f758e1b55fb7b", "user", 0, 0, 0},
+	{"39bebf7c212cb9996b5f758e1b55fb7b", "beta", 416303537, 0, 0},
 	{"8304f734b39120f7028ac4de469e071f", "user", 0, 0, 0},
 	{"fcbeca7ce573d48f3926f64e556a8674", "user", 0, 0, 0},
 	{"f1b77821c9244c3a8b22eec0a1ed632d", "user", 0, 0, 0},
@@ -83,6 +83,9 @@ local ver2_down = INST("TextLabel")
 local ver3_up = INST("TextLabel")
 local ver3_down = INST("TextLabel")
 
+local ver4_up = INST("TextLabel")
+local ver4_down = INST("TextLabel")
+
 local versions = INST("ImageLabel")
 
 local ver2 = INST("Frame")
@@ -92,6 +95,10 @@ local version_2 = INST("TextButton")
 local ver3 = INST("Frame")
 local UIGradient_5 = INST("UIGradient")
 local version_3 = INST("TextButton")
+
+local ver4 = INST("Frame")
+local UIGradient_6 = INST("UIGradient")
+local version_4 = INST("TextButton")
 
 --I feel bad#7826-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -183,7 +190,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				opt_version.Position = UDIM2(0, 165, 0, 72)
 				opt_version.Size = UDIM2(0, 215, 0, 33)
 				opt_version.Font = Enum.Font.GothamSemibold
-				opt_version.Text = "last version: 1.0.1"
+				opt_version.Text = "last version: 1.0.2 beta"
 				opt_version.TextColor3 = COL3RGB(237, 164, 0)
 				opt_version.TextStrokeColor3 = COL3RGB(180, 101, 0)
 				opt_version.TextStrokeTransparency = 0
@@ -197,7 +204,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				opt_update.Position = UDIM2(0, 165, 0, 112)
 				opt_update.Size = UDIM2(0, 215, 0, 33)
 				opt_update.Font = Enum.Font.GothamSemibold
-				opt_update.Text = "update: 02/01/2022"
+				opt_update.Text = "update: 05/01/2022"
 				opt_update.TextColor3 = COL3RGB(237, 164, 0)
 				opt_update.TextStrokeColor3 = COL3RGB(180, 101, 0)
 				opt_update.TextStrokeTransparency = 0
@@ -211,7 +218,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				opt_status.Position = UDIM2(0, 165, 0, 152)
 				opt_status.Size = UDIM2(0, 215, 0, 33)
 				opt_status.Font = Enum.Font.GothamSemibold
-				opt_status.Text = "status: working"
+				opt_status.Text = "status: working, doggo cute"
 				opt_status.TextColor3 = COL3RGB(237, 164, 0)
 				opt_status.TextStrokeColor3 = COL3RGB(180, 101, 0)
 				opt_status.TextStrokeTransparency = 0
@@ -237,7 +244,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				key.Position = UDIM2(0, 0, 0, 0)
 				key.Size = UDIM2(0, 278, 0, 23)
 				key.Font = Enum.Font.GothamSemibold
-				key.Text = "key"
+				key.Text = "ur ip pls"
 				key.TextColor3 = COL3RGB(237, 164, 0)
 				key.TextStrokeColor3 = COL3RGB(180, 101, 0)
 				key.TextStrokeTransparency = 0
@@ -294,7 +301,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				if ( key.Text == "IFB_L0VE_TRAPS_T00_MUTCH" ) then
 					user = true
 					id = true
-					loadstring(game:HttpGet'https://ACCTUALLY_DEV_VERSION')()
+					loadstring(game:HttpGet'https://big_black_fat_cock')()
 					game.CoreGui.loader:Destroy()
 				end
 					
@@ -331,15 +338,15 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 					
 				if ( ( user == true ) and ( id == true ) ) then
 					if ( change_txt.Text == "v1.0.0" ) then
-						loadstring(game:HttpGet(('bbh'),true))()
+						loadstring(game:HttpGet((''),true))()
 						game.CoreGui.loader:Destroy()
 					elseif ( change_txt.Text == "v1.0.1" ) then
 						loadstring(game:HttpGet(('https://pastebin.com/raw/zsS0JPWb'),true))()
 						game.CoreGui.loader:Destroy()
-					--[[
-					elseif ( change_txt.Text == "v1.0.1" ) then
-						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.4')()
+					elseif (( change_txt.Text == "v1.0.2" ) and ( keys_and_account_ids[i][2] ~= "beta" )) then
+						loadstring(game:HttpGet(('https://pastebin.com/raw/zsS0JPWb'),true))()
 						game.CoreGui.loader:Destroy()
+					--[[
 					elseif ( change_txt.Text == "v1.0.1" ) then
 						loadstring(game:HttpGet'https://raw.githubusercontent.com/safsafs312/FNH/main/FNH-V2.5')()
 						game.CoreGui.loader:Destroy()
@@ -530,7 +537,7 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				ver3_up.Position = UDIM2(0, 177, 0, 5)
 				ver3_up.Size = UDIM2(0, 258, 0, 25)
 				ver3_up.Font = Enum.Font.GothamSemibold
-				ver3_up.Text = "added: spectator list, hitlogs,"
+				ver3_up.Text = "added: spectator list, hitlogs"
 				ver3_up.TextColor3 = COL3RGB(237, 164, 0)
 				ver3_up.TextStrokeColor3 = COL3RGB(180, 101, 0)
 				ver3_up.TextStrokeTransparency = 0
@@ -550,11 +557,73 @@ loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 				ver3_down.TextSize = 16
 				ver3_down.TextXAlignment = Enum.TextXAlignment.Left
 				
+			ver4.Name = "ver4"
+			ver4.Parent = cbmg
+			ver4.BackgroundColor3 = COL3RGB(255, 255, 255)
+			ver4.BackgroundTransparency = 0.1
+			ver4.BorderColor3 = COL3RGB(35, 35, 35)
+			ver4.Position = UDIM2(0, 5, 0, 174)
+			ver4.Size = UDIM2(0, 440, 0, 61)
+			
+				UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(46, 131, 132)), ColorSequenceKeypoint.new(1.00, COL3RGB(129, 213, 213))}
+				UIGradient_6.Rotation = 270
+				UIGradient_6.Parent = ver4
+					
+				version_4.Name = "version_4"
+				version_4.Parent = ver4
+				version_4.BackgroundColor3 = COL3RGB(52, 121, 122)
+				version_4.BorderColor3 = COL3RGB(35, 35, 35)
+				version_4.Size = UDIM2(0, 160, 0, 23)
+				version_4.Position = UDIM2(0, 6, 0, 6)
+				version_4.Font = Enum.Font.GothamSemibold
+				version_4.Text = "version 1.0.2"
+				version_4.TextColor3 = COL3RGB(237, 164, 0)
+				version_4.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				version_4.TextStrokeTransparency = 0
+				version_4.TextSize = 14
+				version_4.MouseButton1Click:Connect(function()
+					change_txt.Text = "v1.0.2"
+
+					main_two.Active = false
+					main_two.Selectable = false
+					main_two.Visible = false
+
+					main.Active = true
+					main.Selectable = true
+					main.Visible = true
+				end)
+
+				ver4_up.Name = "ver4_up"
+				ver4_up.Parent = ver4
+				ver4_up.BackgroundTransparency = 1
+				ver4_up.Position = UDIM2(0, 177, 0, 5)
+				ver4_up.Size = UDIM2(0, 258, 0, 25)
+				ver4_up.Font = Enum.Font.GothamSemibold
+				ver4_up.Text = "added: my nudes"
+				ver4_up.TextColor3 = COL3RGB(237, 164, 0)
+				ver4_up.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				ver4_up.TextStrokeTransparency = 0
+				ver4_up.TextSize = 16
+				ver4_up.TextXAlignment = Enum.TextXAlignment.Left
+
+				ver4_down.Name = "ver4_down"
+				ver4_down.Parent = ver4
+				ver4_down.BackgroundTransparency = 1
+				ver4_down.Position = UDIM2(0, 10, 0, 30)
+				ver4_down.Size = UDIM2(0, 425, 0, 25)
+				ver4_down.Font = Enum.Font.GothamSemibold
+				ver4_down.Text = ""
+				ver4_down.TextColor3 = COL3RGB(237, 164, 0)
+				ver4_down.TextStrokeColor3 = COL3RGB(180, 101, 0)
+				ver4_down.TextStrokeTransparency = 0
+				ver4_down.TextSize = 16
+				ver4_down.TextXAlignment = Enum.TextXAlignment.Left
+				
 			local namenn = INST("TextLabel")
 			namenn.Name = "namenn"
 			namenn.Parent = cbmg
 			namenn.BackgroundTransparency = 1
-			namenn.Position = UDIM2(0, 0, 0, 173)
+			namenn.Position = UDIM2(0, 0, 0, 240)
 			namenn.Size = UDIM2(0, 450, 0, 30)
 			namenn.Font = Enum.Font.GothamSemibold
 			namenn.Text = "soon..."
